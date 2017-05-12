@@ -5,6 +5,7 @@
 */
 
 // the setup function runs once when you press reset or power the board
+#include "RotaryEncoder.h"
 #include "Potentiometer.h"
 
 Potentiometer p1(0);

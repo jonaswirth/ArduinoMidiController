@@ -83,10 +83,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Potentiometer.h" />
+    <ClInclude Include="RotaryEncoder.h" />
     <ClInclude Include="__vm\.MidiController.vsarduino.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Potentiometer.cpp" />
+    <ClCompile Include="RotaryEncoder.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

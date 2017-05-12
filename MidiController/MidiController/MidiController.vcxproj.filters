@@ -24,9 +24,15 @@
     <ClInclude Include="Potentiometer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="RotaryEncoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Potentiometer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RotaryEncoder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
