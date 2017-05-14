@@ -14,11 +14,13 @@ private:
 	int analogPort;
 	int value;
 	int oldValue;
+	int smoothValue;
 public:
 	Potentiometer(int port);
 	int get_analogPort();
 	void set_analogPort(int port);
 	int get_value();
+	int readSmoothValue(bool onlyIfChanged);
 };
 
 #endif
