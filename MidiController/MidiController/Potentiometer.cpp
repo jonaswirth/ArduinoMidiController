@@ -38,3 +38,10 @@ int Potentiometer::readSmoothValue(bool onlyIfChanged) {
 		}
 	}
 }
+
+void Potentiometer::sendIfChanged() {
+	int val = readSmoothValue(true);
+	if (val >= 0) {
+		Serial.println(val);
+	}
+}

@@ -21,6 +21,7 @@ public:
 	void set_analogPort(int port);
 	int get_value();
 	int readSmoothValue(bool onlyIfChanged);
+	void sendIfChanged();
 };
 
 #endif
