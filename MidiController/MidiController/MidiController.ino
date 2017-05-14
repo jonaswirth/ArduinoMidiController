@@ -14,12 +14,23 @@ Potentiometer p3(2);
 
 void setup() {
 	Serial.begin(9600);
+	Serial.println("Start");
 }
 
 // the loop function runs over and over again until power down or reset
 void loop() {
 	int p1val = p1.readSmoothValue(true);
 	if (p1val >= 0) {
-		Serial.println("Poti " + p1.get_analogPort + " val " + p1val);
+		Serial.println(p1val);
+	}
+
+	int p2val = p2.readSmoothValue(true);
+	if (p2val >= 0) {
+		Serial.println(p2val);
+	}
+
+	int p3val = p3.readSmoothValue(true);
+	if (p3val >= 0) {
+		Serial.println(p3val);
 	}
 }

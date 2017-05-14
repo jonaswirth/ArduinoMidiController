@@ -25,12 +25,12 @@ int Potentiometer::get_value() {
 
 int Potentiometer::readSmoothValue(bool onlyIfChanged) {
 	smoothValue = 0.6 * smoothValue + 0.4 * analogRead(analogPort);
-	oldValue = smoothValue;
 	if (!onlyIfChanged) {
 		return smoothValue;
 	}
 	else {
 		if (smoothValue != oldValue) {
+			oldValue = smoothValue;
 			return smoothValue;
 		}
 		else {
