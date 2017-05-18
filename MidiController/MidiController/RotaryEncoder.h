@@ -12,9 +12,10 @@ class RotaryEncoder {
 private:
 	int clockwisePort;
 	int counterClockwisePort;
+	int controllerNr;
 public:
-	RotaryEncoder(int clockwise, int counterClockwise);
-	int read();
+	RotaryEncoder(int clockwise, int counterClockwise, int controller);
+	void readAndSend();
 };
 
 #endif

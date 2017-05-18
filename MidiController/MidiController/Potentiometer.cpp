@@ -4,9 +4,11 @@
 
 #include "Arduino.h"
 #include "Potentiometer.h"
+#include "MidiWriter.h"
 
-Potentiometer::Potentiometer(int port) {
+Potentiometer::Potentiometer(int port, int controller) {
 	analogPort = port;
+	controllerNr = controller;
 }
 
 int Potentiometer::get_analogPort() {
@@ -42,6 +44,6 @@ int Potentiometer::readSmoothValue(bool onlyIfChanged) {
 void Potentiometer::sendIfChanged() {
 	int val = readSmoothValue(true);
 	if (val >= 0) {
-		Serial.println(val);
+		MidiWriter::sendControllChange(controllerNr, map(val, 0, 1023, 0, 127));
 	}
 }

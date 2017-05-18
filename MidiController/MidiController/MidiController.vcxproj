@@ -82,11 +82,13 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="MidiWriter.h" />
     <ClInclude Include="Potentiometer.h" />
     <ClInclude Include="RotaryEncoder.h" />
     <ClInclude Include="__vm\.MidiController.vsarduino.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="MidiWriter.cpp" />
     <ClCompile Include="Potentiometer.cpp" />
     <ClCompile Include="RotaryEncoder.cpp" />
   </ItemGroup>

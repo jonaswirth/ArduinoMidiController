@@ -15,8 +15,9 @@ private:
 	int value;
 	int oldValue;
 	int smoothValue;
+	int controllerNr;
 public:
-	Potentiometer(int port);
+	Potentiometer(int port, int controller);
 	int get_analogPort();
 	void set_analogPort(int port);
 	int get_value();
