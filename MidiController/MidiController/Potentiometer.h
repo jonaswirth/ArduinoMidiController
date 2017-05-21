@@ -18,10 +18,7 @@ private:
 	int controllerNr;
 public:
 	Potentiometer(int port, int controller);
-	int get_analogPort();
-	void set_analogPort(int port);
-	int get_value();
-	int readSmoothValue(bool onlyIfChanged);
+	int readSmoothValue();
 	void sendIfChanged();
 };
 
