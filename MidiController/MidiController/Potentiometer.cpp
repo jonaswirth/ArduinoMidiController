@@ -26,6 +26,6 @@ int Potentiometer::readSmoothValue() {
 void Potentiometer::sendIfChanged() {
 	int val = readSmoothValue();
 	if (val >= 0) {
-		MidiWriter::sendControllChange(controllerNr, map(val, 0, 1023, 0, 127));
+		MidiWriter::sendControllChange(controllerNr, val);
 	}
 }

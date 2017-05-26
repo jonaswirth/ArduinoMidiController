@@ -5,6 +5,7 @@
 */
 
 // the setup function runs once when you press reset or power the board
+#include "Multiplexer.h"
 #include "MidiWriter.h"
 #include "RotaryEncoder.h"
 #include "Potentiometer.h"
